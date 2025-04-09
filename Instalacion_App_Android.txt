@@ -16,4 +16,5 @@ Si todo salio bien, la app se comienza a ejecutar en el emulador
 
 
 --- NOTAS PARA INFORME
+- Agregue la linea "implementation 'com.google.guava:guava:28.2-android'" en dependencies de app/build.gradle como fix para el problema "com.google.common.util.concurrent.ListenableFuture"
 - Tuve que agregar la linea "android:exported="true" en MANIFEST porque la app lanzaba un error al compilar al tener como compilationversion y targetversion la api 31.
