@@ -1,0 +1,19 @@
+PASOS PREVIOS
+-Instalar JDK 11
+-Instalar Node 14.21.3
+BUILDEAR APP
+- npm install
+- Una vez instaladas las dependencias ir a android studio y sincronizar el proyecto con los archivos gradle
+- Luego, ir a la barra de opciones, build y clean project
+- Luego, ir a la barra de opciones, build y rebuild project
+
+EJECUTAR APP EN EMULADOR
+- Abrir el emulador
+- En una consola ejecutar "npx react-native start"(npm run start) para iniciar el metro bundler (no cerrar esta consola)
+- En otra consola ejecutar "npx react-native run-android"(npm run android) para compilar la app en el emulador
+
+Si todo salio bien, la app se comienza a ejecutar en el emulador
+
+
+--- NOTAS PARA INFORME
+- Tuve que agregar la linea "android:exported="true" en MANIFEST porque la app lanzaba un error al compilar al tener como compilationversion y targetversion la api 31.
